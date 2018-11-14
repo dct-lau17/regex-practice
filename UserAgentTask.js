@@ -76,12 +76,13 @@ function getBrowserDetails(userAgent) {
     }
 
     // console.log(userAgent + " : " + JSON.stringify(output));
-    return JSON.stringify(output)
+    return output
 }
 
 
 userAgent.forEach(function (val, ind) {
-    console.log(ind+1 + '. ' + val + ' : ' + getBrowserDetails(val));
+    output = getBrowserDetails(val)
+    console.log(ind+1 + '. ' + val + ' : ' + JSON.stringify(output))
 });
 
     /* 
