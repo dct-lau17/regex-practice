@@ -74,8 +74,7 @@ function getBrowserDetails(userAgent) {
         output.deviceType = "Bot"
         output.browserName = "Bot"
     }
-
-    // console.log(userAgent + " : " + JSON.stringify(output));
+    
     return output
 }
 
